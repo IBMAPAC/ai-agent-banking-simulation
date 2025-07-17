@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinSecure AI Banking Simulation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+  <div class="header-container">
+    <h1>FinSecure AI Banking Simulation</h1>
+    <p>Choose a scenario to simulate agentic AI behavior in banking:</p>
+    <div>
+      </div>
+  </div>
+
+  <div class="content-container">
+    
+    <div class="simulation-column">
+      <div class="dashboard-container">
+        <canvas id="arrowCanvas"></canvas>
+        <div class="dashboard-grid">
+          <div class="agent-card" id="risk-analyst"><div class="bubble" id="bubble-risk-analyst"></div><h3>📊 Risk Analyst</h3><p>Agent Status: <span class="status idle">Idle</span></p></div>
+          <div class="agent-card" id="fraud-detection"><div class="bubble" id="bubble-fraud-detection"></div><h3>🛡️ Fraud Detection</h3><p>Agent Status: <span class="status idle">Idle</span></p></div>
+          <div class="agent-card" id="strategy-planner"><div class="bubble" id="bubble-strategy-planner"></div><h3>🎯 Strategy Planner</h3><p>Agent Status: <span class="status idle">Idle</span></p></div>
+          <div class="agent-card" id="compliance-officer"><div class="bubble" id="bubble-compliance-officer"></div><h3>⚖️ Compliance Officer</h3><p>Agent Status: <span class="status idle">Idle</span></p></div>
+          <div class="agent-card" id="client-outreach"><div class="bubble" id="bubble-client-outreach"></div><h3>🗣️ Client Outreach</h3><p>Agent Status: <span class="status idle">Idle</span></p></div>
+          <div class="agent-card" id="model-tuner"><div class="bubble" id="bubble-model-tuner"></div><h3>🔁 Model Tuner</h3><p>Agent Status: <span class="status idle">Idle</span></p></div>
+        </div>
+      </div>
+
+      <div class="log-container">
+        <div class="simulation-log">
+          <h3>🧠 Agent Log</h3>
+          <pre id="scenarioLog">[ Waiting for scenario to be triggered... ]</pre>
+          <div id="humanInputContainer"></div>
+        </div>
+        <div class="step-nav">
+          <button id="nextStepBtn" onclick="nextStep()">➡️ Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation-column">
+      <h2>Agentic AI Differentiators</h2>
+      <div id="explanation-text">
+        <p>Select a scenario to begin. As the simulation runs, this panel will explain how the agents' actions provide value beyond traditional automation.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
